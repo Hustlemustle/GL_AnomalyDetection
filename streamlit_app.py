@@ -1,10 +1,13 @@
 
-
-
-
 import pandas as pd
-import streamlit as st
-import matplotlib.pyplot as plt
+
+from matplotlib import pyplot as plt
+
+try:
+    import streamlit as st
+except ImportError:
+    print("Please install the 'streamlit' package.")
+
 
 # Load the Excel file
 @st.cache_data
